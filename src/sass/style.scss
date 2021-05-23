@@ -1,4 +1,6 @@
 @import './_variable.scss';
+@import './general-components.scss';
+@import './breakpoint.scss';
 @font-face {
     font-family: "cairoFont";
     src: url(../fonts/Cairo-Regular.ttf);
@@ -6,17 +8,224 @@
 
 body {
     font-family: "cairoFont", 'Cambira, Cochin, Georgia, Times, Times New Roman, serif' !important;
+    background: $dark-gradient;
 }
 
+// main-container
 .container-fluid {
     padding-right: 0px !important;
     padding-left: 0px !important;
     overflow-x: hidden;
 }
 
+//navbar-section
 .navbar-brand {
     img {
         width: 133px;
         height: 54px;
+    }
+}
+
+//about-us-section
+.who-are-we {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: -910px -445px;
+    background-attachment: fixed;
+    height: 400px;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    &::after {
+        content: '';
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.6);
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        display: flex !important;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        z-index: -1;
+    }
+    .about-details {
+        z-index: 10;
+    }
+    h2 {
+        font-size: 48px;
+        font-weight: 800;
+        color: $main-color;
+    }
+    p {
+        padding: 25px;
+        font-size: 28px;
+        color: $secondry-color;
+    }
+}
+
+//our-services-section
+.our-services {
+    h1 {
+        font-size: 48px;
+        font-weight: 800;
+        color: $main-color;
+    }
+    .service-card {
+        margin: 20px auto;
+        height: 500px;
+        width: 500px;
+        background: #fff;
+        box-shadow: 0 1px 38px rgba(0, 0, 0, 0.15), 0 5px 12px rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+        border-radius: 50px;
+        .top {
+            padding-top: 100px;
+            position: relative;
+            height: 570px;
+            width: 100%;
+            overflow: hidden;
+            background: url("../images/rent-car.jpg") no-repeat;
+            background-size: cover;
+            background-position: center center;
+            text-align: center;
+            opacity: 0.90;
+            &::after {
+                content: "";
+                height: 100%;
+                width: 100%;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: rgba(0, 0, 0, 0.5);
+            }
+            .wrapper {
+                position: relative;
+                z-index: 1;
+                .icon {
+                    margin-top: 20px;
+                    font-size: 40px;
+                    font-weight: 400;
+                    color: $main-color;
+                    width: 60px;
+                    height: 60px;
+                    line-height: 60px;
+                    border: 2px solid $secondry-color;
+                    border-radius: 50px;
+                }
+                .heading {
+                    margin-top: 20px;
+                    font-size: 30px;
+                    font-weight: 500;
+                    color: $secondry-color;
+                }
+                .details {
+                    margin-top: 20px;
+                    font-size: 18px;
+                    line-height: 25px;
+                    font-weight: 400;
+                    margin-bottom: 0px;
+                    color: $custom-color;
+                }
+            }
+        }
+    }
+    .sec-se .top {
+        background: url("../images/travel.png") no-repeat;
+        background-size: cover;
+        background-position: center center;
+        opacity: 0.90;
+    }
+    .sec-fe .top {
+        background: url("../images/hous.png") no-repeat;
+        background-size: cover;
+        background-position: center center;
+        opacity: 0.90;
+    }
+    .sec-the .top {
+        background: url("../images/airport.png") no-repeat;
+        background-size: cover;
+        background-position: center center;
+        opacity: 0.90;
+    }
+    .frame {
+        margin: auto auto;
+        width: 90%;
+        text-align: center;
+        .btn-read {
+            background: $main-color;
+            width: 130px;
+            height: 40px;
+            line-height: 42px;
+            padding: 0;
+            border: none;
+            &::after,
+            &::before {
+                position: absolute;
+                content: "";
+                right: 0;
+                top: 0;
+                background: $secondry-color;
+                transition: all 0.3s ease;
+            }
+            &::before {
+                height: 0%;
+                width: 2px;
+            }
+            &::after {
+                width: 0%;
+                height: 2px;
+            }
+            &:hover {
+                background: transparent;
+                box-shadow: none;
+                &::before {
+                    height: 100%;
+                }
+                &::after {
+                    width: 100%;
+                }
+            }
+            span {
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 100%;
+                &:hover {
+                    color: $secondry-color;
+                    &:before {
+                        height: 100%;
+                    }
+                    &:after {
+                        width: 100%;
+                    }
+                }
+                &::after,
+                &::before {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    bottom: 0;
+                    background: $secondry-color;
+                    transition: all 0.3s ease;
+                }
+                &::before {
+                    width: 2px;
+                    height: 0%;
+                }
+                &::after {
+                    width: 0%;
+                    height: 2px;
+                }
+            }
+        }
+        .btn-read1 {
+            position: absolute;
+            bottom: -100px;
+            right: 29%;
+        }
     }
 }
