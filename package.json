@@ -12,7 +12,8 @@
   "keywords": [],
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
-    "sass": "^1.32.12"
+    "sass": "^1.32.12",
+    "three": "^0.128.0"
   },
   "devDependencies": {
     "@laylazi/bootstrap-rtl": "^4.6.0-1",
