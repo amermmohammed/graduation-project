@@ -1,6 +1,8 @@
 @import './_variable.scss';
 @import './general-components.scss';
 @import './breakpoint.scss';
+@import './tour1.scss';
+@import './tour2.scss';
 @font-face {
     font-family: "cairoFont";
     src: url(../fonts/Cairo-Regular.ttf);
@@ -390,6 +392,10 @@ body {
                 &::after {
                     width: 100%;
                 }
+            }
+            a {
+                text-decoration: none;
+                color: $custom-color;
             }
             span {
                 position: relative;
