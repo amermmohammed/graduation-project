@@ -6,8 +6,8 @@
                 font-weight: 600;
                 color: $main-colorII !important;
                 &:hover {
+                    transition: color 1s ease;
                     color: $sub-secondry-color !important;
-                    border-bottom: 3px solid $secondry-color;
                 }
             }
         }

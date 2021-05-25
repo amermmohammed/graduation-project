@@ -31,9 +31,6 @@ body {
                 }
                 form {
                     .form-control {
-                        &:focus {
-                            box-shadow: none;
-                        }
                         &::placeholder {
                             color: $main-color;
                             font-weight: bold;
@@ -58,7 +55,8 @@ body {
             }
             .btn-2 {
                 background: $main-colorII;
-                border: none;
+                border: 2px solid transparent;
+                ;
                 &:hover,
                 &:focus {
                     background: transparent;
@@ -68,7 +66,7 @@ body {
             }
             .btn-facebook {
                 background: #405D9D;
-                border: none;
+                border: 2px solid transparent;
                 &:hover,
                 &:focus {
                     background: transparent;
@@ -78,7 +76,7 @@ body {
             }
             .btn-twitter {
                 background: #42AEEC;
-                border: none;
+                border: 2px solid transparent;
                 &:hover,
                 &:focus {
                     background: transparent;
