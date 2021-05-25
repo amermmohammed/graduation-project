@@ -70,6 +70,16 @@
             width: 100% !important;
         }
     }
+    section.gallary {
+        .card {
+            .row {
+                img {
+                    height: 317px !important;
+                    width: 586px !important;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -92,6 +102,16 @@
         p {
             font-size: 18px !important;
             width: 100% !important;
+        }
+    }
+    section.gallary {
+        .card {
+            .row {
+                img {
+                    height: 317px !important;
+                    width: 486px !important;
+                }
+            }
         }
     }
 }
