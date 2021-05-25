@@ -6,82 +6,11 @@ $text-strock:0.02rem #000;
         color: $main-color;
     }
     .card {
-        border-radius: 30px;
-        overflow: hidden;
-        background-color: $muted-color;
-        .row {
-            &::after {
-                content: ""; // ::before and ::after both require content
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-image: linear-gradient(to bottom, rgba(132, 221, 248, 0.185), rgba(87, 149, 184, 0.01));
-                border-radius: 30px;
-                z-index: 1;
-            }
-            img {
-                height: 300px !important;
-                width: 367px !important;
-                padding: 0;
-                border-radius: 3px;
-                z-index: 10;
-            }
-            .card-body {
-                text-align: justify;
-            }
-            .card-title {
-                font-size: 45px;
-                font-weight: 600;
-                color: $secondry-color;
-                -webkit-text-stroke: $text-strock;
-            }
-            .card-text {
-                font-size: 20px;
-                font-weight: 300;
-                color: $main-colorII;
-            }
-        }
+        @include cards;
     }
 }
 
 .tour2 {
+    @include header-1;
     background-image: url(../images/bg.jpg);
-    background-size: cover;
-    background-position: center -50px;
-    background-attachment: fixed;
-    height: 400px;
-    background-repeat: no-repeat;
-    position: relative;
-    z-index: 0;
-    overflow: hidden;
-    &::after {
-        content: '';
-        position: absolute;
-        background-color: rgba(0, 0, 0, 0.6);
-        top: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        display: flex !important;
-        flex-flow: column;
-        align-items: center;
-        justify-content: center;
-        z-index: -1;
-    }
-    .about-details {
-        z-index: 10;
-    }
-    h2 {
-        font-size: 48px;
-        font-weight: 800;
-        color: $main-color;
-    }
-    p {
-        padding: 25px;
-        font-size: 28px;
-        text-align: justify;
-        color: $secondry-color;
-    }
 }
