@@ -24,7 +24,7 @@
                     </a>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item  p-2 active">
+                            <li class="nav-item first-list-element p-2">
                                 <a class="nav-link " href="/index.html">الرئيسية</a>
                             </li>
                             <li class="nav-item  p-2">
@@ -39,7 +39,12 @@
                             <li class="nav-item  p-2">
                                 <a class="nav-link" href="/#contact">تواصل معنا</a>
                             </li>
-
+                            <li class="nav-item  p-2">
+                                <a class="nav-link" href="login.html">تسجيل الدخول</a>
+                            </li>
+                            <li class="nav-item  p-2">
+                                <a class="nav-link" href="register.html">التسجيل</a>
+                            </li>
 
                         </ul>
 
@@ -49,7 +54,7 @@
         </section>
 
         <!--قسم من نحن-->
-        <section class="who-are-we">
+        <section class="who-are-we" id="about">
             <div class="row justify-content-center about-details">
                 <div class="col-8">
                     <div class="text-center my-5 py-5">
@@ -61,7 +66,7 @@
             </div>
         </section>
         <!--قسم خدماتنا-->
-        <section class="our-services my-5 text-center">
+        <section class="our-services my-5 text-center" id="services">
             <h1>خدماتنا</h1>
             <div class="container">
                 <div class="row justify-content-center d--sm-block">
@@ -158,14 +163,14 @@
                         <div class="counter">
                             <i class="fas fa-store-alt fa-2x"></i>
                             <h2 class="timer count-title count-number" data-to="10" data-speed="4000"></h2>
-                            <p class="count-text ">اكثر من فرع </p>
+                            <p class="count-text ">عدد الفروع</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!--قسم الجولات السياحية-->
-        <section class="tours my-5 text-center">
+        <section class="tours my-5 text-center" id="tours">
             <h1>الجولات السياحية</h1>
             <div class="container">
                 <div class="row justify-content-center d--sm-block">
@@ -208,12 +213,13 @@
             <h1>لا تفوت عروض صيف 2021</h1>
             <div class="readmore">
                 <div class="frame">
-                    <button class="custom-btn btn-read "><span>سارع بالحجز الآن</span></button>
+                    <a href="login.html" target="_blank" rel="noopener noreferrer"><button class="custom-btn btn-read "><span>سارع بالحجز الآن</span></button></a>
+
                 </div>
             </div>
         </section>
         <!--إتصل بنا-->
-        <section class="contact my-5 text-center">
+        <section class="contact my-5 text-center" id="contact">
             <h1>اتصل بنا</h1>
 
             <div class="container my-4">

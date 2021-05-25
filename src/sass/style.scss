@@ -3,6 +3,8 @@
 @import './breakpoint.scss';
 @import './tour1.scss';
 @import './tour2.scss';
+@import './login.scss';
+@import './navbar.scss';
 @font-face {
     font-family: "cairoFont";
     src: url(../fonts/Cairo-Regular.ttf);
@@ -64,6 +66,7 @@ body {
     p {
         padding: 25px;
         font-size: 28px;
+        text-align: justify;
         color: $secondry-color;
     }
 }

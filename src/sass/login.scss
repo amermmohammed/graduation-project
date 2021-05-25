@@ -1,0 +1,100 @@
+body {
+    .register-cont {
+        background-image: url(../images/bg3.png);
+        opacity: 0.9;
+        background-size: cover;
+        background-position: center -50px;
+        background-repeat: no-repeat;
+    }
+    .login-cont {
+        background-image: url(../images/bg2.png);
+        background-size: cover;
+        opacity: 0.9;
+        background-position: center -50px;
+        background-repeat: no-repeat;
+    }
+    .container-fluid {
+        .container {
+            .login-pass {
+                img {}
+            }
+            .row {
+                .input-group {
+                    .input-group-prepend {
+                        .input-group-text {
+                            color: $main-color !important;
+                        }
+                    }
+                }
+                .custom-select {
+                    color: $main-color !important;
+                }
+                form {
+                    .form-control {
+                        &:focus {
+                            box-shadow: none;
+                        }
+                        &::placeholder {
+                            color: $main-color;
+                            font-weight: bold;
+                            font-size: 0.9rem;
+                        }
+                        &:not(select) {
+                            padding: 1.5rem 0.5rem;
+                        }
+                    }
+                    select {
+                        .form-control {
+                            height: 52px !important;
+                        }
+                    }
+                }
+            }
+            .border-left-0 {
+                border-left: 0 !important;
+            }
+            .border-md {
+                border-width: 2px;
+            }
+            .btn-2 {
+                background: $main-colorII;
+                border: none;
+                &:hover,
+                &:focus {
+                    background: transparent;
+                    border: 2px solid $main-color;
+                    color: $main-colorII;
+                }
+            }
+            .btn-facebook {
+                background: #405D9D;
+                border: none;
+                &:hover,
+                &:focus {
+                    background: transparent;
+                    border: 2px solid $main-color;
+                    color: $main-colorII;
+                }
+            }
+            .btn-twitter {
+                background: #42AEEC;
+                border: none;
+                &:hover,
+                &:focus {
+                    background: transparent;
+                    border: 2px solid $main-color;
+                    color: $main-colorII;
+                }
+            }
+        }
+    }
+    /* webkit solution */
+     ::-webkit-input-placeholder {
+        text-align: right;
+    }
+    /* mozilla solution */
+    input:-moz-placeholder,
+    input:focus {
+        text-align: right;
+    }
+}

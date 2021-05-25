@@ -1,0 +1,19 @@
+.navbar {
+    ul {
+        li {
+            a.nav-link {
+                font-size: 18px;
+                font-weight: 600;
+                color: $main-colorII !important;
+                &:hover {
+                    color: $sub-secondry-color !important;
+                    border-bottom: 3px solid $secondry-color;
+                }
+            }
+        }
+    }
+}
+
+.active {
+    border-bottom: 3px solid $secondry-color !important;
+}

@@ -45,3 +45,43 @@ $text-strock:0.02rem #000;
         }
     }
 }
+
+.tour2 {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center -50px;
+    background-attachment: fixed;
+    height: 400px;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    &::after {
+        content: '';
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.6);
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        display: flex !important;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        z-index: -1;
+    }
+    .about-details {
+        z-index: 10;
+    }
+    h2 {
+        font-size: 48px;
+        font-weight: 800;
+        color: $main-color;
+    }
+    p {
+        padding: 25px;
+        font-size: 28px;
+        text-align: justify;
+        color: $secondry-color;
+    }
+}

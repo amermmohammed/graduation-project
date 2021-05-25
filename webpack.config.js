@@ -86,6 +86,14 @@ module.exports = {
             template: './src/tour2.html',
             filename: 'tour2.html',
         }),
+        new HtmlWebpackPlugin({
+            template: './src/login.html',
+            filename: 'login.html',
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/register.html',
+            filename: 'register.html',
+        }),
         new MiniCssExtractPlugin({
             filename: "css/style.css"
         })

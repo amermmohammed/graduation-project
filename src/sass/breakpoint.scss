@@ -12,3 +12,206 @@
         }
     }
 }
+
+@media (max-width: 1199px) {
+    .who-are-we {
+        p {
+            font-size: 20px !important;
+        }
+    }
+}
+
+@media (min-width: 1120px) and (max-width: 1577px) {
+    .tour1 {
+        height: 550px !important;
+        h2 {
+            font-size: 53px !important;
+            font-weight: 600;
+        }
+        p {
+            font-size: 20px !important;
+        }
+    }
+}
+
+@media (max-width: 1119px) {
+    .tour1 {
+        height: 550px !important;
+        h2 {
+            font-size: 43px !important;
+            font-weight: 500;
+        }
+        p {
+            font-size: 20px !important;
+            width: 100% !important;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .tour1 {
+        height: 680px !important;
+        h2 {
+            font-size: 40px !important;
+            font-weight: 500;
+        }
+        p {
+            font-size: 20px !important;
+            width: 100% !important;
+        }
+    }
+    .tour2 {
+        h2 {
+            font-size: 30px !important;
+            font-weight: 400;
+        }
+        p {
+            font-size: 25px !important;
+            width: 100% !important;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .tour1 {
+        height: 680px !important;
+        h2 {
+            font-size: 30px !important;
+            font-weight: 500;
+        }
+        p {
+            font-size: 18px !important;
+            width: 100% !important;
+        }
+    }
+    .tour2 {
+        h2 {
+            font-size: 25px !important;
+            font-weight: 400;
+        }
+        p {
+            font-size: 18px !important;
+            width: 100% !important;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .who-are-we {
+        height: 500px !important;
+        p {
+            font-size: 18px !important;
+            width: 100%;
+        }
+    }
+    .our-services,
+    .tours {
+        .service-card {
+            height: 450px !important;
+            width: 335px !important;
+        }
+    }
+    .tour1 {
+        height: 550px !important;
+        h2 {
+            font-size: 23px !important;
+            font-weight: 500;
+        }
+        p {
+            font-size: 14px !important;
+            width: 100% !important;
+        }
+    }
+    .tour2 {
+        h2 {
+            font-size: 25px !important;
+            font-weight: 400;
+        }
+        p {
+            font-size: 20px !important;
+            width: 100% !important;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .tour1 {
+        height: 600px !important;
+        h2 {
+            font-size: 20px !important;
+            font-weight: 500;
+        }
+        p {
+            font-size: 12px !important;
+            width: 100% !important;
+        }
+    }
+    .tour2 {
+        height: 300px !important;
+        h2 {
+            font-size: 20px !important;
+            font-weight: 500;
+        }
+        p {
+            font-size: 12px !important;
+            width: 100% !important;
+        }
+    }
+    .gallary {
+        .row {
+            #thumbnail-preview-indicators {
+                .carousel-indicators {
+                    li {
+                        .thumbnail {
+                            width: 50px !important;
+                            height: 50px !important;
+                            max-height: 100px;
+                            overflow: hidden;
+                            opacity: 0.8;
+                            img {
+                                width: 50px !important;
+                                height: 50px !important;
+                            }
+                        }
+                    }
+                }
+            }
+            .carousel {
+                width: 300px !important;
+                height: 300px !important;
+                img {
+                    width: 300px !important;
+                    height: 300px !important;
+                }
+            }
+        }
+    }
+    .splitter2 {
+        h1 {
+            font-size: 38px !important;
+            margin-top: 150px;
+        }
+    }
+    .gallary {
+        .card {
+            .row {
+                .card-title {
+                    font-size: 35px !important;
+                }
+            }
+        }
+    }
+    .splitter {
+        .fa-2x {
+            font-size: 40px !important;
+            margin: 0 auto;
+            float: none;
+            display: table;
+            color: #6EC5E9;
+        }
+        .count-title,
+        .count-text {
+            font-size: 18px !important;
+        }
+    }
+}

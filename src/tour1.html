@@ -49,15 +49,15 @@
         </section>
 
         <!--قسم من نحن-->
-        <section class="who-are-we">
+        <section class="tour1">
             <div class="row justify-content-center about-details">
                 <div class="col-8">
                     <div class="text-center my-5 py-5">
-                        <h2>رحلة إلى الأهرامات في مصر</h2>
-                        <p class="custom-paragraph"> تتصف أهرامات مصر الثلاثة بأنها أحد أهم عجائب الدنيا السبعة في جمهورية مصر تقع على هضبة الجيزة في محافظة الجيزة، أيضًا تقع على الضفة الغربية لنهر النيل، وهي تشمل ثلاثة أهرامات هرم خوفو، خفرع، منقرع، والتي بنيت قبل حوالي 25 قرنًا
-                            قبل الميلاد. وهي مقابر ملكية كل منها يحمل اسم الملك الذي بناه والذي دفن فيه. وأفضل الأنشطة التي يمكنكم القيام بها في هذه الرحلة: يمكنكم الاستمتاع بجولة على ظهر الجمل، إذ تستطيعوا استئجار جمل والقيام بجولة حول هذه الأهرامات
-                            لتروا ضخامتها وعظمة بناء هذه الأهرامات قبل آلاف السنين، وتستطيعوا التقاط أجمل الصور التذكارية هناك.
-                        </p>
+                        <h2 class="mt-2">رحلة إلى الأهرامات في مصر</h2>
+                        <p>تتصف أهرامات مصر الثلاثة بأنها أحد أهم عجائب الدنيا السبعة في جمهورية مصر تقع على هضبة الجيزة في محافظة الجيزة، أيضًا تقع على الضفة الغربية لنهر النيل، وهي تشمل ثلاثة أهرامات هرم خوفو، خفرع، منقرع، والتي بنيت قبل حوالي 25 قرنًا
+                            قبل الميلاد. وهي مقابر ملكية كل منها يحمل اسم الملك الذي بناه والذي دفن فيه<span id="dots">...</span><span id="more"> وأفضل الأنشطة التي يمكنكم القيام بها في هذه الرحلة: يمكنكم الاستمتاع بجولة على ظهر الجمل، إذ تستطيعوا استئجار جمل والقيام بجولة حول هذه الأهرامات
+                                لتروا ضخامتها وعظمة بناء هذه الأهرامات قبل آلاف السنين، وتستطيعوا التقاط أجمل الصور التذكارية هناك</span></p>
+                        <button onclick="myFunction()" class="custom-btn btn-1 mb-5" id="myBtn">إقرأ أكثر</button>
                     </div>
                 </div>
             </div>
@@ -66,7 +66,7 @@
         <!--معرض الصور-->
         <section class="gallary my-5">
             <div class="container">
-                <div class="row justify-content-center">
+                <div class="row mx-3 justify-content-center">
                     <h1 class="my-5">معرض الصور</h1>
                     <div id="thumbnail-preview-indicators" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
@@ -157,7 +157,7 @@
             <h1>لا تفوت عروض صيف 2021</h1>
             <div class="readmore">
                 <div class="frame">
-                    <button class="custom-btn btn-read "><span>سارع بالحجز الآن</span></button>
+                    <a href="login.html" target="_blank" rel="noopener noreferrer"><button class="custom-btn btn-read "><span>سارع بالحجز الآن</span></button></a>
                 </div>
             </div>
         </section>
@@ -225,7 +225,23 @@
     </div>
 
 
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
 
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "اقرأ المزيد";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "اقرأ أقل";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
 </body>
 
 </html>
